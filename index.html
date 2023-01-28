@@ -1,9 +1,8 @@
 [
 {
-"last":"false",
-"type":"CountDownTimer",
-"description":"Create CountDownTimer",
-"code":"new CountDownTimer(30000, 1000) { 
+    "type":"CountDownTimer",
+    "description":"Create CountDownTimer",
+    "code":""new CountDownTimer(30000, 1000) { 
 		public void onTick(long millisUntilFinished) { 
 				//Code To Run After Each Tick
 				
@@ -18,56 +17,5 @@
 
 //30000 Is The Countdown Time
 //1000 Is The Delay Before Timer Starts"
-},
-{
-"last":"false",
-"type":"Timer",
-"description":"Create Timer Component",
-"code":"final Timer _timer = new Timer();
-
-final TimerTask YourTimer;"
-},
-{
-"last":"false",
-"type":"Timer",
-"description":"Execute Code After Desired Milliseconds",
-"code":""
-},
-{
-"last":"false",
-"type":"Timer",
-"description":"Execute Code Every Specified Milliseconds",
-"code":"YourTimer = new TimerTask() {
-			@Override
-			public void run() {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						//Code To Run Every Specified Milliseconds
-					}
-				});
-			}
-		};
-		_timer.scheduleAtFixedRate(YourTimer, (int)(1000), (int)(2000));
-
-//1000 Is The Delay Time Before The Timer Starts
-
-//2000 Is The Time Interval At Which The Code Gets Executed"
-},
-{
-"last":"true",
-"type":"Timer",
-"description":"Cancel Timer",
-"code":"final Timer _timer = new Timer();
-
-final TimerTask YourTimer;"
-},
-{
-"last":"true",
-"type":"Timer",
-"description":"Cancel Timer",
-"code":"final Timer _timer = new Timer();
-
-final TimerTask YourTimer;"
 }
 ]
