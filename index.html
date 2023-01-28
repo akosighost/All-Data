@@ -1,21 +1,11 @@
 [
 {
-    "type":"CountDownTimer",
-    "description":"Create CountDownTimer",
-    "code":"new CountDownTimer(30000, 1000) { 
-		public void onTick(long millisUntilFinished) { 
-				//Code To Run After Each Tick
-				
-		}
-		
-		public void onFinish() {
-				//Code To Run When Timer Finished
-				
-		}
-		
-}.start();
-
-//30000 Is The Countdown Time
-//1000 Is The Delay Before Timer Starts"
+    "type":"Activity",
+    "description":"Set Status/Navigation Color",
+    "code":"Window w = this.getWindow();
+    w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+    w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+    w.setStatusBarColor(0xFF202226);
+    w.setNavigationBarColor(0xFF202226);"
 }
 ]
