@@ -45,5 +45,18 @@ w.setNavigationBarColor(0xFFFFFFFF);"
 			return _view;
 		}
 	}"
+			},
+{
+"type":"SharedPreferences",
+"description":"Create Shared Preferences",
+"code":"import android.content.SharedPreferences;
+			
+			// 'sp' is your component name
+			private SharedPreferences sp;
+			
+			// 'value' is your file name
+			sp = getSharedPreferences("save", Activity.MODE_PRIVATE);
+			
+			sp.edit().putString("value", String.valueOf((long)(number))).commit();"
 }
 ]
