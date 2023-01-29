@@ -52,17 +52,17 @@ w.setNavigationBarColor(0xFFFFFFFF);"
 "code":"import android.content.SharedPreferences;
 			
 			private SharedPreferences sp;
-			sp = getSharedPreferences("save", Activity.MODE_PRIVATE);
+			sp = getSharedPreferences('save', Activity.MODE_PRIVATE);
 			
 			// 'sp' is your component name
 			// 'value' is your key name
 			
-			sp.edit().putString("value", "").commit();
+			sp.edit().putString('value', '').commit();
 			
 			// get your data
-			sp.getString("value", "");
+			sp.getString('value', '');
 			
 			// remove your data
-			sp.edit().remove("value").commit();"
+			sp.edit().remove('value').commit();"
 }
 ]
